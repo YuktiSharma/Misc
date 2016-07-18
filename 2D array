@@ -1,0 +1,168 @@
+
+Gmail
+COMPOSE
+Labels
+Inbox (192)
+Starred
+Important
+Sent Mail
+Drafts (17)
+Circles
+More 
+Hangouts
+
+ 
+ 
+  More 
+1 of 894  
+ 
+Collapse all Print all In new window
+Fwd: zoho pgm
+Inbox
+x 
+
+Sushmitha U
+Attachments7:35 PM (25 minutes ago)
+
+to me 
+---------- Forwarded message ----------
+From: Sushmitha U <sushmiudhay@gmail.com>
+Date: Sat, Dec 26, 2015 at 12:51 PM
+Subject: zoho pgm
+To: Sushmitha U <sushmiudhay@gmail.com>
+2 Attachments 
+ 
+
+Sushmitha U
+Attachments7:36 PM (25 minutes ago)
+
+to me 
+---------- Forwarded message ----------
+From: Sushmitha U <sushmiudhay@gmail.com>
+Date: Sat, Dec 26, 2015 at 2:42 PM
+Subject: Re: zoho pgm
+To: Sushmitha U <sushmiudhay@gmail.com>
+
+
+
+
+On Sat, Dec 26, 2015 at 12:51 PM, Sushmitha U <sushmiudhay@gmail.com> wrote:
+4 Attachments 
+ 
+
+Sushmitha U
+Attachments7:36 PM (25 minutes ago)
+
+to me 
+---------- Forwarded message ----------
+From: Sushmitha U <sushmiudhay@gmail.com>
+Date: Sat, Mar 12, 2016 at 2:51 PM
+Subject: Re: zoho pgm
+To: Sushmitha U <sushmiudhay@gmail.com>
+
+
+
+
+On Sat, Jan 9, 2016 at 2:40 PM, Sushmitha U <sushmiudhay@gmail.com> wrote:
+
+Attachments area
+
+Sushmitha U
+Attachments7:36 PM (24 minutes ago)
+
+to me 
+
+Attachments area
+
+Sushmitha U
+Attachments7:37 PM (24 minutes ago)
+
+to me 
+
+Attachments area
+	
+Click here to Reply or Forward
+3.68 GB (24%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 15 minutes ago
+Details
+Sushmitha U's profile photo
+Sushmitha U
+Add to circles
+
+Show details
+
+
+#include<stdio.h>
+void main()
+
+{
+	int a[10][10],n,i,j,prod=1;
+	printf("enter the size of matrix:\n");
+	scanf("%d",&n);
+	printf("enter the elements:\n");
+
+	//to get elements for two-d array	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+
+	//to print elements of two-d array	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			printf("%d\t",a[i][j]);
+		}
+	
+	printf("\n");
+	}
+	
+	//to assign the matrix to other
+	int b[10][10];
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			b[i][j]=a[i][j];
+		}
+	}
+
+	/*
+	//to get the lower triangle matrix
+	for(j=0;j<n-1;j++)
+	{
+		for(i=j+1;i<n;i++)
+		{
+			printf("%d\t",a[i][j]);
+		}
+		printf("\n");
+	}
+	*/
+
+	//calculation
+	for(j=0;j<n-1;j++)
+	{
+		for(i=j+1;i<n;i++)
+		{
+			for(k=0;k<n;k++)
+			{
+			(b[i-1][k]/b[i-1][j])*b[i][j]
+		
+			}
+		}
+	}
+	
+	//to find product of diagonal elements
+	for(i=0;i<n;i++)
+	{
+		prod=prod*a[i][i];
+	}
+	printf("the product is: %d\n",prod);
+
+}			
