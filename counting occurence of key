@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int a[20],count=0,i,key,size;
+printf("enter size of array");
+scanf("%d",&size);
+printf("enter the array");
+for(i=0;i<size;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("enter a num in array");
+scanf("%d",&key);
+for(i=0;i<size;i++)
+{
+if(a[i]==key)
+count++;
+}
+printf("the occurancec of %d is %d",key,count);
+return 0;
+}
